@@ -5,15 +5,15 @@
 <meta name ="viewpoint" content="initial-scale=1.0,width=device-width"/>
 <title>Johnnywalshfloorcoverings</title>
 <script>document.cookie='resolution=' +Math.max(screen.width, screen.height)+'; path=/';</script>
-<link href="ContactUs.css" rel="stylesheet" type="text/css" />
+<link href="ContactUs.css" rel="stylesheet"/>
 <script src="modernizr-custom.js"></script>
 <!--[if lte IE 8]>
 <script src="js/respond.min.js"/></script>
 <![endif]-->
 <script src="conditional.js"></script>
-</head>
 
-<body>
+
+
 
 <div id ="wrapper" class="container>
 	<!-- the header and navigation -->
@@ -21,22 +21,58 @@
 			
 		<div id "logo" class"col_12">Johnnywalshfloorcoverings</span></div>
 		<nav role="navigation">
-			<ul id="mainNav" >
-				<li class="internal"><a href="Home.html">Home</a><li>
+			<ul id="a" >
+				<li><a href="Home.html">Home</a><li>
 				<li class="internal"><a href="about.html">About Us</a></li>
 				<li class="internal"><a href="ContactUs.html">Contact Us</a></li>
 			</ul>
 		</nav>
-		<div class="logi">
-				<a href="http://benfrain.com/"></a>
+		<div>
+				<label for="search"> Search the site....</label>
+				<input id="search" name="search" type="search" placeholder="Wyatt Earp" autofocus>
 			</div>
 	</header>
+</head>
+<body>
 
 	<!-- the content -->
+	
 	<div id="content a" role="main">
-	<div>
-	<p> This is the Contact us page!!</p>
-	</div>
+	<legend>ContactUs</legend>
+			<div>
+				<label for="name">Your Name (first and last):</label>
+				<input id="name" name="name" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}"
+							placeholder="Dwight schultz" required aria-required="true">
+			</div>
+			<div>
+				<label for "email">Your Email address:</label>
+				<input id ="email" name="email" type="email" 
+				placeholder="dwight.schultz@gmail.com"
+				required aria-required="true";>
+			</div>
+	
+			
+			<div>
+				<label for="tel">Telephone No.: </label>
+				<input id="tel" name="tel" type="tel" placeholder="1-234-546758"
+				autocomplete="off" required aria-required="true">
+			</div>
+			<div>
+			<h3>Feedback Section</h3>
+			<p>If you have any comments, please let us know by providing feedback:</p> 
+			<form action="contactUs" method="Post">
+			<textarea cols=40  rows =5 name=feedback></textarea>
+			<br>  
+			<input type="submit" value="Submit">
+			</form>
+			</div>
+			
+			<div>
+			<h3> Security question</h3>
+				<label for="color"Your favourite colour</label>
+				<input id="color" name="color" type="color">
+			</div>
+		
 				<script src="js/jquery-1.7.1.js"></script>
 				<script src="js-webshim/minified/extras/modernizrcustom.
 				js"></script>
@@ -47,14 +83,14 @@
 			</script>
 			
 	
-	<!-- the footer -->
-	<footer>
-		<p>here is the footer</p>
+			<!-- the footer -->
+			<footer>
+					<p>End of contact us page</p>
 		
-	</footer
+			</footer>
 	
-</div>
-</body>
+		</div>
+	</body>
 </html>
 				
 

@@ -55,7 +55,7 @@
 		font-weight: normal;
 		font-style: normal;
 }
-    navigation{
+   #navigation{
 		padding-bottom: 25px;
 		margin-top: 26px;
 		margin-left: -1.0416667%;/*-10/960*/
@@ -64,7 +64,7 @@
 		width: 97.9166667%;
 	}
 	
-    navigation ul li{
+   #navigation ul li{
 		display: inline-block;
 		margin-right: 2.6595745%; /* 25 / 940*/
 	}
@@ -218,13 +218,13 @@
 		padding-right: 3px;
 	}
 
-    navigation ul li a{
+    #navigation ul li a{
 		height:42px;
 		line-height: 42px
 		margin-right: 2.6595745%;/*25 / 960*/
 		text-decoration: none;
 		text-transform: uppercase;
-		font-family: 'BebasNeueRegular';
+		font-family: 'Arial';
 		font-size: 1.875em; /*30 /16*/
 		 color: #000000;
 		 text-shadow: 0 1px 0 hsla(0, 0%, 100%, 0.75);
