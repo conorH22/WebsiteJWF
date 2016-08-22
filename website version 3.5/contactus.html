@@ -1,0 +1,128 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+		<script
+		src="http://maps.googleapis.com/maps/api/js">
+		</script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		
+	
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">JohnnyWalshfloorCoverings</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+             <article>
+                   <h2>ContactUs:</h2>
+			<div>
+				<label for="name">Your Name (first and last):</label>
+				<input id="name" name="name" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}"
+							placeholder="Dwight schultz" required aria-required="true">
+			</div>
+			<div>
+				<label for "email">Your Email address:</label>
+				<input id ="email" name="email" type="email" 
+				placeholder="dwight.schultz@gmail.com"
+				required aria-required="true";>
+			</div>
+	
+			
+			<div>
+				<label for="tel">Your Telephone No.: </label>
+				<input id="tel" name="tel" type="tel" placeholder="012-1234567"
+				autocomplete="off" required aria-required="true">
+			</div>
+			<div>
+			<h4>Your message:</h4>
+			
+			<form action="contactUs" method="Post">
+			<textarea cols=40  rows =4 name=feedback></textarea>
+			<br>  
+			<input type="submit" value="Submit">
+			</form>
+			</div>
+			 
+						
+			
+			<div>
+					
+					
+			
+                </article>
+
+                <aside>
+						<h3>JohnnyWalshfloorCoveringsLTD</h3>
+						<p>Johnny walsh</p>
+						<p>Address: Farnane, murroe, Co.Limerick</p>
+						<p>Phone: 061-386306</p>
+						<div id="googleMap"></div>
+                </aside>
+				
+				<div id="googleMap"></div>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>&#169 johnnywalshfloorcoverings</h3>
+            </footer>
+        </div>
+		<script>
+	function initialize() {
+	var mapProp = {
+    center:new google.maps.LatLng(52.6494819,-8.4140571),
+    zoom:14,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+	};
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
